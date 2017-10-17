@@ -1,0 +1,49 @@
+package com.gg;
+import java.lang.*;
+class AtFrontAgain
+{	
+	public boolean frontAgain(String str) {
+		if(str.length()>2)
+		{
+			if((str.substring(0, 2).equals(str.substring(str.length()-2))))
+			{
+			return true;
+			}
+			else
+			{
+			 return false;
+			}
+		}
+		else if(str.length()==2)
+		{
+		 return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
+
+}
+class Test{
+	public static void main(String arg[]) {
+
+		AtFrontAgain o=new AtFrontAgain();
+		boolean re=o.frontAgain("");
+		System.out.println(re);
+		/*String c="ed";
+		System.out.println(c.substring(0, 2));
+		
+		System.out.println("First two character==>"+c.substring(0, 2));
+		System.out.println("last two character=>"+c.substring(c.length()-2));*/
+		
+		/*String c="redxx";
+		String c1="xxred";
+		String c2="blueTimes";
+		System.out.println("Red first occurance"+c.indexOf("red"));
+		System.out.println("exception string"+c1.indexOf("red"));
+		System.out.println("blue first occurance"+c2.indexOf("blue"));*/
+
+	}
+}

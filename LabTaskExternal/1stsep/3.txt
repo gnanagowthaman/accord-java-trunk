@@ -1,0 +1,52 @@
+package com.gg;
+import java.lang.*;
+class AtLastTwo
+{
+	public String lastTwo(String str) {
+		if(str.length()>=2)
+		{
+			return str.substring(0,str.lastIndexOf(str.substring(str.length()-2)) )+str.substring(str.lastIndexOf(str.substring(str.length()-1)))+str.substring(str.lastIndexOf(str.substring(str.length()-2)),str.length()-1);
+			
+		}
+		else
+		{
+		  return "string";
+		}
+	}
+
+
+}
+class Test{
+	public static void main(String arg[]) {
+
+		AtLastTwo o=new AtLastTwo();
+		String re=o.lastTwo("");
+		System.out.println(re);
+		/*String c="coding";
+		System.out.println("last before position==>"+c.lastIndexOf(c.substring(c.length()-2)));
+		System.out.println("last position==>"+c.lastIndexOf(c.substring(c.length()-1)));
+		
+		int d=c.lastIndexOf(c.substring(c.length()-2));
+		System.out.println("D value=>"+d);
+		System.out.println("last dummy position"+c.lastIndexOf(c.substring(c.length())));
+		
+		
+		System.out.println("Remaining characters==>"+c.substring(0,c.lastIndexOf(c.substring(c.length()-2)) ));
+		System.out.println("last character==>"+c.substring(c.lastIndexOf(c.substring(c.length()-1))));
+		System.out.println("last before character==>"+c.substring(c.lastIndexOf(c.substring(c.length()-2)),c.length()-1));*/
+				
+		/*String s="abc";
+		String s1="cat";
+		//String s1=s;
+		
+		int t=s.lastIndexOf(s.substring(2));
+		int t1=s1.lastIndexOf(s1.substring(0));
+		
+		s.substring(t);
+		System.out.println(s.substring(t));
+		System.out.println(s1.substring(t1));
+		System.out.println(t);
+		System.out.println(t1);*/
+
+	}
+}
